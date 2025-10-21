@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://tpk66k4xd1wp"]
+
+[ext_resource type="PackedScene" uid="uid://b86tcp813rgmt" path="res://scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://dmcj6khtg4iso" path="res://scenes/maze.tscn" id="2_rwgxs"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.119963, 2.19719, 0.113984)
+
+[node name="maze" parent="." instance=ExtResource("2_rwgxs")]

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dmcj6khtg4iso"]
+
+[node name="maze" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(14.4535, 0, 0, 0, 0.013957, 0, 0, 0, 14.4535, 0, 0, 0)
