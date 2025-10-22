@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b5bdy43qi375c"
+path.s3tc="res://.godot/imported/bathroom_sink__low-poly__game-ready (1)_0.png-903a9b39a4d4e0eec07ef922acfb4db7.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "e53e1ea069e2dd6f40b2438bc7222edf"
+}
+
+[deps]
+
+source_file="res://furniture/sink/bathroom_sink__low-poly__game-ready (1)_0.png"
+dest_files=["res://.godot/imported/bathroom_sink__low-poly__game-ready (1)_0.png-903a9b39a4d4e0eec07ef922acfb4db7.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
