@@ -4,6 +4,7 @@ extends CharacterBody3D
 @onready var camera: Camera3D = $Head/Camera3D
 
 @export var SPEED: float = 4.5
+@export var HEALTH: int = 100
 @export var SENSITIVITY: float = 0.0025
 @export var HEAD_BOBS: float = 0.48
 @export var BOB_DISTANCE: float = 0.1
@@ -44,7 +45,6 @@ func _physics_process(delta: float) -> void:
 	t_bob += delta * SPEED * velocity.length() * float(is_on_floor())
 	camera.transform.origin = head_bob(t_bob)
 	
-	
 	#Move and Slide
 	move_and_slide()
 
@@ -53,3 +53,7 @@ func head_bob(time) -> Vector3:
 	pos.y = sin(time * HEAD_BOBS) * BOB_DISTANCE
 	pos.x = cos(time * HEAD_BOBS / 3) * BOB_DISTANCE
 	return pos
+
+func change_health(change):
+	HEALTH -= change
+	HEALTH = clamp(HEALTH - change, 0, 100)

@@ -1,11 +1,36 @@
-[gd_scene load_steps=3 format=3 uid="uid://tpk66k4xd1wp"]
+[gd_scene load_steps=5 format=3 uid="uid://tpk66k4xd1wp"]
 
 [ext_resource type="PackedScene" uid="uid://b86tcp813rgmt" path="res://scenes/player.tscn" id="1_nnsk1"]
-[ext_resource type="PackedScene" uid="uid://dmcj6khtg4iso" path="res://scenes/maze.tscn" id="2_rwgxs"]
+[ext_resource type="Texture2D" uid="uid://cx4vn04vf3jft" path="res://assets/crosshair.png" id="3_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://b0vp08nyjfy7f" path="res://scenes/house.tscn" id="3_k0juu"]
+
+[sub_resource type="Environment" id="Environment_4wyf3"]
+background_mode = 2
+background_color = Color(0, 0, 0.0196078, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.01
 
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_nnsk1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.119963, 2.19719, 0.113984)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.58236, 0.491581, 0.301541)
 
-[node name="maze" parent="." instance=ExtResource("2_rwgxs")]
+[node name="House" parent="." instance=ExtResource("3_k0juu")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Crosshair" type="CenterContainer" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="HUD/Crosshair"]
+layout_mode = 2
+texture = ExtResource("3_4wyf3")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4wyf3")

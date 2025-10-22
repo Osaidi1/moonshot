@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b86tcp813rgmt"]
+[gd_scene load_steps=5 format=3 uid="uid://b86tcp813rgmt"]
 
 [ext_resource type="Script" uid="uid://bh1lvvmhscso7" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://wnsajn6qgsge" path="res://scripts/flashlight.gd" id="2_g2els"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3vyb7"]
 
@@ -10,6 +11,9 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 script = ExtResource("1_3vyb7")
+SPEED = 2.0
+HEAD_BOBS = 2.0
+BOB_DISTANCE = 0.05
 
 [node name="Body" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_3vyb7")
@@ -22,3 +26,12 @@ shape = SubResource("ConvexPolygonShape3D_3vyb7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.728259, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Head/Camera3D"]
+shadow_bias = 8.82
+distance_fade_begin = 2.0
+distance_fade_length = 7.0
+spot_range = 6.0
+spot_angle = 37.4842
+spot_angle_attenuation = 1.23114
+script = ExtResource("2_g2els")
