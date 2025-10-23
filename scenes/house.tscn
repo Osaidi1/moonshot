@@ -1,14 +1,19 @@
-[gd_scene load_steps=38 format=4 uid="uid://b0vp08nyjfy7f"]
+[gd_scene load_steps=40 format=4 uid="uid://b0vp08nyjfy7f"]
 
 [ext_resource type="Texture2D" uid="uid://dvyd6eqinugxu" path="res://assets/textures/washroom tiles/gross-dirty-tiles_albedo.png" id="1_f74lx"]
+[ext_resource type="Texture2D" uid="uid://bnm2vm0a6ulhr" path="res://assets/textures/white.png" id="1_mhx8p"]
 [ext_resource type="Texture2D" uid="uid://boxh1voiwxxey" path="res://furniture/toilet/toilet_Material_diffuse.png" id="1_qtlar"]
-[ext_resource type="Texture2D" uid="uid://dmy14met2wjwt" path="res://assets/textures/wall.png" id="1_wcu0q"]
+[ext_resource type="Texture2D" uid="uid://dmy14met2wjwt" path="res://assets/textures/floor.png" id="1_wcu0q"]
 [ext_resource type="Texture2D" uid="uid://b45v0fob0v36j" path="res://furniture/toilet/toilet_Material_occlusion-Material_specularGlossiness.png" id="2_rk7hg"]
 [ext_resource type="Texture2D" uid="uid://b5bdy43qi375c" path="res://furniture/sink/bathroom_sink__low-poly__game-ready (1)_0.png" id="3_3bgk5"]
 [ext_resource type="Texture2D" uid="uid://o8rekg0e5djd" path="res://furniture/sink/bathroom_sink__low-poly__game-ready (1)_1.png" id="4_f74lx"]
 [ext_resource type="Texture2D" uid="uid://ct2ylbc388auv" path="res://furniture/sink/bathroom_sink__low-poly__game-ready (1)_2.png" id="5_ptc3g"]
 [ext_resource type="Texture2D" uid="uid://dgy8fi84w0v8i" path="res://assets/textures/washroom tiles/gross-dirty-tiles_roughness.png" id="7_ptc3g"]
 [ext_resource type="PackedScene" uid="uid://d211a5sfkpjhi" path="res://scenes/chair.tscn" id="9_bwc8c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65la3"]
+albedo_texture = ExtResource("1_mhx8p")
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d7po0"]
 albedo_color = Color(0, 0, 0, 1)
@@ -324,13 +329,27 @@ size = Vector3(0.420868, 0.149536, 0.423126)
 
 [node name="Walls" type="Node3D" parent="Floor 3"]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Floor 3/Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.451965, 0.643158, -1.43259)
+[node name="bathroom1" type="CSGBox3D" parent="Floor 3/Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.451965, 0.643158, 3.92858)
+material_override = SubResource("StandardMaterial3D_65la3")
 use_collision = true
-size = Vector3(0.0960693, 2.28632, 14.1564)
+size = Vector3(0.0960693, 2.28632, 3.43406)
 
-[node name="CSGBox3D4" type="CSGBox3D" parent="Floor 3/Walls"]
+[node name="CSGBox3D22" type="CSGBox3D" parent="Floor 3/Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.451965, 0.643158, -3.1521)
+material_override = SubResource("StandardMaterial3D_65la3")
+use_collision = true
+size = Vector3(0.0960693, 2.28632, 10.7174)
+
+[node name="bathroom3" type="CSGBox3D" parent="Floor 3/Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.23578, 0.636124, 5.65497)
+material_override = SubResource("StandardMaterial3D_65la3")
+use_collision = true
+size = Vector3(0.0960693, 2.27225, 3.34883)
+
+[node name="bathroom2" type="CSGBox3D" parent="Floor 3/Walls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.89717, 0.631393, 3.95402)
+material_override = SubResource("StandardMaterial3D_65la3")
 use_collision = true
 size = Vector3(0.0960693, 2.26279, 3.47807)
 
@@ -354,11 +373,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.96265, 0.625519, -4.95432)
 use_collision = true
 size = Vector3(0.0960693, 2.25104, 2.23833)
 
-[node name="CSGBox3D3" type="CSGBox3D" parent="Floor 3/Walls"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.23578, 0.636124, 5.65497)
-use_collision = true
-size = Vector3(0.0960693, 2.27225, 3.34883)
-
 [node name="CSGBox3D8" type="CSGBox3D" parent="Floor 3/Walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.0751, 0.62381, -3.827)
 use_collision = true
@@ -379,13 +393,27 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.6651
 use_collision = true
 size = Vector3(0.0960693, 2.26227, 0.392615)
 
-[node name="CSGBox3D5" type="CSGBox3D" parent="Floor 3/Walls"]
+[node name="bathroom5" type="CSGBox3D" parent="Floor 3/Walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.64287, 0.635712, 2.20065)
+material_override = SubResource("StandardMaterial3D_65la3")
+use_collision = true
+size = Vector3(0.0960693, 2.27142, 2.5444)
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="Floor 3/Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.64287, 0.635712, 2.17055)
+material_override = SubResource("StandardMaterial3D_65la3")
 use_collision = true
 size = Vector3(0.0960693, 2.27142, 2.5444)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Floor 3/Walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00647444, 0.640656, 2.20065)
+material_override = SubResource("StandardMaterial3D_65la3")
+use_collision = true
+size = Vector3(0.0960693, 2.28131, 0.823102)
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="Floor 3/Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00647444, 0.640656, 2.17685)
+material_override = SubResource("StandardMaterial3D_65la3")
 use_collision = true
 size = Vector3(0.0960693, 2.28131, 0.823102)
 
@@ -404,11 +432,11 @@ use_collision = true
 size = Vector3(4.89158, 0.137207, 10.2501)
 
 [node name="CSGBox3D17" type="CSGBox3D" parent="Floor 3/Walls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69429, 1.27638, 1.07486)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.69429, 1.27638, -0.774218)
 material_override = SubResource("StandardMaterial3D_d7po0")
 material_overlay = SubResource("StandardMaterial3D_qcuhb")
 use_collision = true
-size = Vector3(4.62669, 0.137207, 9.70423)
+size = Vector3(4.62669, 0.137207, 6.00607)
 
 [node name="CSGBox3D18" type="CSGBox3D" parent="Floor 3/Walls"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.50372, 1.27638, -6.23136)
@@ -422,6 +450,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20407, -0.431525, 3.98336)
 material_override = SubResource("StandardMaterial3D_wcu0q")
 use_collision = true
 size = Vector3(3.55219, 0.137, 3.52757)
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Floor 3/Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.20407, 1.25242, 3.98683)
+material_override = SubResource("StandardMaterial3D_wcu0q")
+use_collision = true
+size = Vector3(3.55219, 0.137, 3.52062)
 
 [node name="AmbientLight" type="Node3D" parent="Floor 3"]
 
@@ -569,5 +603,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 1.61293e-12, -3.58143e-28, -1.61293e-12, 1, -4.24273e-31, 3.58143e-28, -4.24273e-31, 1, 0.51509, -2.89862, 0.77562)
 shape = SubResource("BoxShape3D_3bgk5")
 
-[node name="Node3D" parent="." instance=ExtResource("9_bwc8c")]
+[node name="Library" type="Node3D" parent="Floor 3"]
+
+[node name="Chair" parent="Floor 3/Library" instance=ExtResource("9_bwc8c")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.87967, -0.362607, -7.36433)

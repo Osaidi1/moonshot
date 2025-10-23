@@ -1,10 +1,24 @@
 [gd_scene load_steps=9 format=3 uid="uid://b86tcp813rgmt"]
 
 [ext_resource type="Script" uid="uid://bh1lvvmhscso7" path="res://scripts/player.gd" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://wnsajn6qgsge" path="res://scripts/flashlight.gd" id="2_g2els"]
 [ext_resource type="Shape3D" uid="uid://bohnuvxjdcq3a" path="res://collisions/croucth.tres" id="2_qhqgy"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_3vyb7"]
+
+[sub_resource type="GDScript" id="GDScript_g2els"]
+script/source = "extends SpotLight3D
+
+@onready var flashlight: SpotLight3D = $\".\"
+
+
+func _ready() -> void:
+	flashlight.visible = true
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [sub_resource type="Animation" id="Animation_qlg0r"]
 length = 0.001
@@ -87,7 +101,7 @@ distance_fade_length = 7.0
 spot_range = 5.5
 spot_angle = 47.8521
 spot_angle_attenuation = 1.23114
-script = ExtResource("2_g2els")
+script = SubResource("GDScript_g2els")
 
 [node name="CrouchCheck" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.354, 0)

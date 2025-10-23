@@ -2,30 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwxpd0cbirbd7"
-path.s3tc="res://.godot/imported/chair_file2.png-6a1367f37e749dfbba7cd7f6e4395424.s3tc.ctex"
+uid="uid://d0imw35diccmy"
+path="res://.godot/imported/more wood.png-8d92f2c8b101218db1425d3221a708f9.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "8caefce550ec24fc22438a2146dcc109"
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/chair_file2.png"
-dest_files=["res://.godot/imported/chair_file2.png-6a1367f37e749dfbba7cd7f6e4395424.s3tc.ctex"]
+source_file="res://assets/textures/more wood.png"
+dest_files=["res://.godot/imported/more wood.png-8d92f2c8b101218db1425d3221a708f9.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -35,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
