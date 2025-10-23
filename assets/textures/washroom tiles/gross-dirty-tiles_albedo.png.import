@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgy8fi84w0v8i"
-path.s3tc="res://.godot/imported/gross-dirty-tiles_roughness.png-a060a67ef0665608f3d71a8af69fae39.s3tc.ctex"
+uid="uid://dvyd6eqinugxu"
+path.s3tc="res://.godot/imported/gross-dirty-tiles_albedo.png-2247e325cba7c67563604c98a3047709.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/bathroom texture/gross-dirty-tiles-bl/gross-dirty-tiles_roughness.png"
-dest_files=["res://.godot/imported/gross-dirty-tiles_roughness.png-a060a67ef0665608f3d71a8af69fae39.s3tc.ctex"]
+source_file="res://assets/textures/washroom tiles/gross-dirty-tiles_albedo.png"
+dest_files=["res://.godot/imported/gross-dirty-tiles_albedo.png-2247e325cba7c67563604c98a3047709.s3tc.ctex"]
 
 [params]
 

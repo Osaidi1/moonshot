@@ -2,27 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baluwlpb053ei"
-path.s3tc="res://.godot/imported/Ground Texture.jpg-0404a7d48b798653d7f83afbf11ca258.s3tc.ctex"
+uid="uid://bnex54s8ykfoa"
+path="res://.godot/imported/Horror_Stain_03-128x128.png-b6e53a1b0da9b06e7be2b11e520e66fd.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ground Texture.jpg"
-dest_files=["res://.godot/imported/Ground Texture.jpg-0404a7d48b798653d7f83afbf11ca258.s3tc.ctex"]
+source_file="res://assets/textures/stains/Horror_Stain_03-128x128.png"
+dest_files=["res://.godot/imported/Horror_Stain_03-128x128.png-b6e53a1b0da9b06e7be2b11e520e66fd.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
