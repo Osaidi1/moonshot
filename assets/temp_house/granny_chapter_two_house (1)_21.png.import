@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://hwh3kqoqsls1"
+path.s3tc="res://.godot/imported/granny_chapter_two_house (1)_21.png-f5c8968d2b13e013cb9534633609b1e7.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "1ee4645ef9aaf4a99aa4dbac2c7a9810"
+}
+
+[deps]
+
+source_file="res://assets/temp_house/granny_chapter_two_house (1)_21.png"
+dest_files=["res://.godot/imported/granny_chapter_two_house (1)_21.png-f5c8968d2b13e013cb9534633609b1e7.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

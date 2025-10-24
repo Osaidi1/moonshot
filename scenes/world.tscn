@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b86tcp813rgmt" path="res://scenes/player.tscn" id="1_nnsk1"]
 [ext_resource type="Texture2D" uid="uid://cx4vn04vf3jft" path="res://assets/crosshair.png" id="3_4wyf3"]
-[ext_resource type="PackedScene" uid="uid://b0vp08nyjfy7f" path="res://scenes/house.tscn" id="3_k0juu"]
+[ext_resource type="PackedScene" uid="uid://c8qwha1l6tn6s" path="res://scenes/temp_house.tscn" id="3_k0juu"]
 
 [sub_resource type="Environment" id="Environment_4wyf3"]
 background_mode = 2
@@ -14,10 +14,7 @@ ambient_light_energy = 0.01
 [node name="Node3D" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_nnsk1")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.58236, 0.491581, 0.301541)
-
-[node name="House" parent="." instance=ExtResource("3_k0juu")]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.22539, 7.38088, -4.1197)
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -34,3 +31,6 @@ texture = ExtResource("3_4wyf3")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_4wyf3")
+
+[node name="Node3D" parent="." instance=ExtResource("3_k0juu")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)

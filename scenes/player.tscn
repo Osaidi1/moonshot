@@ -80,7 +80,6 @@ HEAD_BOBS = 2.0
 BOB_DISTANCE = 0.05
 
 [node name="Body" type="MeshInstance3D" parent="."]
-visible = false
 mesh = SubResource("CapsuleMesh_3vyb7")
 skeleton = NodePath("")
 
@@ -95,12 +94,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.728259, 0)
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -0.728259, 0)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Head/Camera3D"]
+light_energy = 2.11
 shadow_bias = 8.82
 distance_fade_begin = 2.0
 distance_fade_length = 7.0
-spot_range = 5.5
+spot_range = 6.353
+spot_attenuation = 2.0
 spot_angle = 47.8521
-spot_angle_attenuation = 1.23114
+spot_angle_attenuation = 2.73207
 script = SubResource("GDScript_g2els")
 
 [node name="CrouchCheck" type="RayCast3D" parent="."]
